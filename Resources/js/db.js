@@ -11,7 +11,6 @@ var Datasource = function( data_path ){
 	
 	this.def;
 	self = this;
-	this.res = {};
 	
 	this.setup = function(){
 		//var dfd = $.Deferred();
