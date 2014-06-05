@@ -1,0 +1,1 @@
+var ds=new Datasource,defs,datasource;ds.setup().then(function(e){defs=e});
