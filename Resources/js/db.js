@@ -1,12 +1,12 @@
 
-var Datasource = function(){
+var Datasource = function( data_path ){
 	
 	var sqlite3 = require('sqlite3').verbose();
 	var when = require('when');
 	var csv = require('fast-csv');
 
 
-	this.db = new sqlite3.Database("/Volumes/Pylos/Projects/FED/projection.db", sqlite3.OPEN_READONLY);
+	this.db = new sqlite3.Database(data_path, sqlite3.OPEN_READONLY);
 	var defs = "chart_definitions.csv"
 	
 	this.def;

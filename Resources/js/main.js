@@ -1,4 +1,4 @@
-var ds = new Datasource();
+var ds = new Datasource("/Volumes/Pylos/Projects/FED/projection.db");
 var defs;
 var datasource;
 ds.setup().then(
