@@ -1,4 +1,5 @@
-id,series_hash,category,chart_name,chart_text,chart_type,region_type
-1,f36ab932a8542c1386dcdf777f52c918,Category_1,Unemployment Rate,"Freegan narwhal kitsch meh, Tonx squid ethnic flexitarian. Drinking vinegar narwhal you probably haven't heard of them, Marfa +1 fashion axe cray Brooklyn twee occupy Helvetica PBR.",usmap,county
-2,ae311d2a8733f2e234c72207b4b732bb,Category_1,Resident population,"Freegan narwhal kitsch meh, Tonx squid ethnic flexitarian. Drinking vinegar narwhal you probably haven't heard of them, Marfa +1 fashion axe cray Brooklyn twee occupy Helvetica PBR.",usmap,county
-3,"ae311d2a8733f2e234c72207b4b732bb, ae311d2a8733f2e234c72207b4b732bb",Category_3,Another chart,"Freegan narwhal kitsch meh, Tonx squid ethnic flexitarian. Drinking vinegar narwhal you probably haven't heard of them, Marfa +1 fashion axe cray Brooklyn twee occupy Helvetica PBR.",scatter,
+id,series_hash,category,chart_name,chart_text,chart_type
+1,f36ab932a8542c1386dcdf777f52c918,Category_1,Unemployment Rate,"Freegan narwhal kitsch meh, Tonx squid ethnic flexitarian. Drinking vinegar narwhal you probably haven't heard of them, Marfa +1 fashion axe cray Brooklyn twee occupy Helvetica PBR.",usmap
+2,ae311d2a8733f2e234c72207b4b732bb,Category_1,Resident population,"Freegan narwhal kitsch meh, Tonx squid ethnic flexitarian. Drinking vinegar narwhal you probably haven't heard of them, Marfa +1 fashion axe cray Brooklyn twee occupy Helvetica PBR.",usmap
+3,"fa7b69c486406d9bd6e0ad18b02295fc, 3e7a27dd8dcd57eb795f906dfb113ab7",Category_3,ScatterPlot,"Freegan narwhal kitsch meh, Tonx squid ethnic flexitarian. Drinking vinegar narwhal you probably haven't heard of them, Marfa +1 fashion axe cray Brooklyn twee occupy Helvetica PBR.",scatter
+4,3e7a27dd8dcd57eb795f906dfb113ab7,Category_3,A world map,Lorem ipsum doler sit amet.,worldmap
