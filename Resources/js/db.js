@@ -7,7 +7,7 @@ var Datasource = function( data_path ){
 
 
 	this.db = new sqlite3.Database(data_path, sqlite3.OPEN_READONLY);
-	var defs = "chart_definitions.csv"
+	var defs = "chart_definitions2.csv"
 	
 	this.def;
 	self = this;

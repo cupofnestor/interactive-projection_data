@@ -1,1 +1,1 @@
-var ds=new Datasource,defs,datasource;ds.setup().then(function(e){defs=e});
+var ds=new Datasource("/Data/projection.db"),defs,datasource;ds.setup().then(function(e){defs=e;makeMenu()});makeMenu=function(){var e=d3.select("body").append("div"),t=e.selectAll("div").data(Object.keys(defs)).enter().append("div");t.append("h2").text(function(e){return e});t.selectAll("p").data(function(e){return defs[e]}).enter().append("p").text(function(e){return e.chart_name})};
