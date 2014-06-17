@@ -169,6 +169,7 @@
 }
 .ui-accordion .ui-accordion-icons {
 	padding-left: 2.2em;
+	margin-top: 20px;
 }
 .ui-accordion .ui-accordion-noicons {
 	padding-left: .7em;
@@ -181,7 +182,7 @@
 	left: 12em;
 	top: 30%;
 	margin-top: -8px;
-	background-image:url('images/header_arrow.png') !important;
+	background-image:url('images/header_arrow.png');
 	width:64px !important;
 	height:64px !important;
 }
@@ -728,7 +729,7 @@ button.ui-button::-moz-focus-inner {
 /* TR overrides */
 .ui-spinner .ui-icon-triangle-1-s {
 	/* need to fix icons sprite */
-	background-image:url('images/header_arrow_down.png') !important;
+	background-image:url('images/header_arrow_down.png');
 }
 .ui-tabs {
 	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
@@ -940,14 +941,14 @@ body .ui-tooltip {
 	background-image: url("images/ui-icons_222222_256x240.png");
 }
 .ui-state-default .ui-icon {
-	background-image: url("images/ui-icons_A4DBE8_256x240.png");
+	background-image: url("images/header_arrow_down.png");
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url("images/ui-icons_A4DBE8_256x240.png");
+	background-image: url("images/header_arrow_down.png");
 }
 .ui-state-active .ui-icon {
-	background-image: url("images/ui-icons_A4DBE8_256x240.png");
+	background-image: url("images/header_arrow_down.png");
 }
 .ui-state-highlight .ui-icon {
 	background-image: url("images/ui-icons_2e83ff_256x240.png");
@@ -972,8 +973,8 @@ body .ui-tooltip {
 .ui-icon-triangle-1-n { background-position: 0 -16px; }
 .ui-icon-triangle-1-ne { background-position: -16px -16px; }
 .ui-icon-triangle-1-e { background-position: -32px -16px; }
-.ui-icon-triangle-1-se { background-position: -48px -16px; }
-.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-se { background-position: 0px 0px; }
+.ui-icon-triangle-1-s { left:11.5em !important; margin-top:0px !important; background-position: -16px -32px; background-image: url("images/header_arrow_down.png") !important; }
 .ui-icon-triangle-1-sw { background-position: -80px -16px; }
 .ui-icon-triangle-1-w { background-position: -96px -16px; }
 .ui-icon-triangle-1-nw { background-position: -112px -16px; }
