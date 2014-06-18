@@ -164,11 +164,11 @@
 	cursor: pointer;
 	position: relative;
 	margin-top: 2px;
-	padding: .5em .5em .5em .7em;
+	padding: 1.2em .5em .5em .7em;
 	min-height: 0; /* support: IE7 */
 }
 .ui-accordion .ui-accordion-icons {
-	padding-left: 2.2em;
+	padding-left: .3em; /* 2.2em */
 	margin-top: 20px;
 }
 .ui-accordion .ui-accordion-noicons {
@@ -178,10 +178,9 @@
 	padding-left: 2.2em;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-	position: absolute;
-	left: 12em;
-	top: 30%;
-	margin-top: -8px;
+	position: relative;
+	float:right;
+	left:0em !important;
 	background-image:url('images/header_arrow.png');
 	width:64px !important;
 	height:64px !important;
@@ -822,16 +821,15 @@ body .ui-tooltip {
 ----------------------------------*/
 .ui-state-default,
 .ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
+.ui-widget-header .ui-state-default {	
 	border: 1px solid #A4DBE8;
-	background: #050a4f url("images/ui-bg_glass_35_050a4f_1x400.png") 50% 50% repeat-x;
+	background-color: rgba(16, 6, 159, 0.7);
 	font-weight: normal;
-	color: #A4DBE8;
+	box-shadow: inset 0 0.7em 0.5em rgba(0, 0, 0, 0.5), inset 0 -0.5em 0.7em rgba(0, 0, 0, 0.5);
 }
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited {
-	color: #A4DBE8;
 	text-decoration: none;
 }
 .ui-state-hover,
@@ -841,9 +839,9 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: 1px solid #A4DBE8;
-	background: #050a4f url("images/ui-bg_glass_75_050a4f_1x400.png") 50% 50% repeat-x;
+	background-color: rgba(16, 6, 159, 0.7);
 	font-weight: normal;
-	color: #A4DBE8;
+	box-shadow: inset 0 0.7em 0.5em rgba(255, 255, 255, 0.1), inset 0 -0.5em 0.7em rgba(255, 255, 255, 0.1);
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -860,9 +858,9 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	border: 1px solid #A4DBE8;
-	background: #050a4f url("images/ui-bg_highlight-soft_35_050a4f_1x100.png") 50% 50% repeat-x;
+	background-color: rgba(16, 6, 159, 0.7);
 	font-weight: normal;
-	color: #A4DBE8;
+	box-shadow: inset 0 0.7em 0.5em rgba(255, 255, 255, 0.2), inset 0 -0.5em 0.7em rgba(255, 255, 255, 0.2);
 }
 .ui-state-active a,
 .ui-state-active a:link,
@@ -972,9 +970,9 @@ body .ui-tooltip {
 .ui-icon-carat-2-e-w { background-position: -144px 0; }
 .ui-icon-triangle-1-n { background-position: 0 -16px; }
 .ui-icon-triangle-1-ne { background-position: -16px -16px; }
-.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-e { background-position: -0px -0px; }
 .ui-icon-triangle-1-se { background-position: 0px 0px; }
-.ui-icon-triangle-1-s { left:11.5em !important; margin-top:0px !important; background-position: -16px -32px; background-image: url("images/header_arrow_down.png") !important; }
+.ui-icon-triangle-1-s { left:0em !important; margin-top:0px !important; background-position: 0px 0px; background-image: url("images/header_arrow_down.png") !important; }
 .ui-icon-triangle-1-sw { background-position: -80px -16px; }
 .ui-icon-triangle-1-w { background-position: -96px -16px; }
 .ui-icon-triangle-1-nw { background-position: -112px -16px; }
