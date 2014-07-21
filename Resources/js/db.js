@@ -114,7 +114,7 @@ var Datasource = function( data_path ){
 		return dfd.promise;
 	}
 	
-	this.getObservation = function( ser_hash ){
+	this.getObservationTest = function( ser_hash ){
 		var dfd = when.defer();
 		var ret = [];
 		self.db.all("SELECT observation from observations WHERE series_hash = ?", [ser_hash], 
@@ -128,36 +128,32 @@ var Datasource = function( data_path ){
 	}
 	
 	
-
+ 
 	
 	
 	
-	this.getObservationOld = function( ser_hash ){
+	this.getObservation = function( ser_hash ){
 		var dfd = when.defer();
 		var ret = [];
-		self.db.serialize(function(){
-				self.db.each("SELECT observation from observations WHERE series_hash = ?", [ser_hash], 
-					function(e,r){
-						if(e){dfd.reject(e)
-							}else{
-								console.log("row");
-								var rj = JSON.parse(r.observation);
-								ret.push(rj);
-							}
-					
-					},
-					function(e,r){
-						if(e){dfd.reject(e)
-							}else{
-									console.log(r+" rows transmitted ");
-									dfd.resolve(ret);
-							}
-					
+
+		self.db.each("SELECT observation from observations WHERE series_hash = ?", [ser_hash], 
+			function(e,r){
+				if(e){dfd.reject(e)
+					}else{
+						console.log("row");
+						var rj = JSON.parse(r.observation);
+						ret.push(rj);
 					}
-				)
 			
-		})
-	
+			},
+			function(e,r){
+				if(e){dfd.reject(e)
+					}else{
+							console.log(r+" rows transmitted ");
+							dfd.resolve(ret);
+					}
+			
+			})
 		return dfd.promise;
 	}
 }

@@ -21,5 +21,8 @@
   "webkit": {
     "plugin": false
   },
-  "chromium-args": "--remote-debugging-port=9222"
+  "chromium-args": "--remote-debugging-port=9222",
+"scripts":
+  {"start": "nodewebkit"}
+	
 }
