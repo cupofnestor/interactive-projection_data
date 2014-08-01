@@ -7,9 +7,13 @@ var Datasource = function( data_path ){
 
 
 	this.db = new sqlite3.Database(data_path, sqlite3.OPEN_READONLY);
+
 	this.db.on('trace', function(t){console.log(t)});
 	var defs = "chart_definitions.csv";
 	var ann_def = "line_annotations.csv";
+
+	
+
 	this.def;
 	this.annotations = [];
 	self = this;
