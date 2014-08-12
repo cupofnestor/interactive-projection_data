@@ -13,7 +13,7 @@ ds.setup().then(
 		
 		$("body").html("<h1>Definitions:</h1><pre>"+JSON.stringify(defs,null,3)+"</pre>");
 		
-		ds.get(defs["Human Capital"][0]).then(
+		ds.get(defs["US Economic Stories"][1]).then(
 			function(d){
 			data = d;
 			console.log("done");
